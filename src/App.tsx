@@ -7,17 +7,15 @@ import vector from "./assets/vector.svg"
 import form from "./assets/form.svg"
 import footer from "./assets/footer.svg"
 
-
 const PasswordManager: React.FC = () => {
   return (
     <div className="password-manager">
+      <div className="app-background">
       <header className="header">
-
         <div className="logo">
           <img src={logo || "/placeholder.svg"} alt="Password Manager Logo" className="logo-icon" />
           <span className="logo-text">Password Manager</span>
         </div>
-
         <div className="auth-buttons">
           <button className="signup-button">Sign up</button>
           <button className="login-button">Login</button>
@@ -38,7 +36,6 @@ const PasswordManager: React.FC = () => {
             </p>
             <button className="get-started-button">Get Started</button>
           </div>
-
           <div className="hero-visual">
             <div className="lock-container">
               <img src={lock || "/placeholder.svg"} alt="Secure Lock" className="lock-icon" />
@@ -70,6 +67,7 @@ const PasswordManager: React.FC = () => {
               <img src={footer || "/placeholder.svg"} alt="" className="footerr" />
               </div>
       </footer>
+      </div>
     </div>
   )
 }
